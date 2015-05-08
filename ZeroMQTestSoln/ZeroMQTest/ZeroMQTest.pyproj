@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>63664f03-bed1-4bd8-8c1e-cd66258abe1c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Version1\ServerV1.py</StartupFile>
+    <StartupFile>Version2\ServerV2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -34,6 +34,8 @@
     <Compile Include="Version1\ServerV1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Version2\ClientV2.py" />
+    <Compile Include="Version2\ServerV2.py" />
     <Compile Include="ZeroMQTest.py" />
   </ItemGroup>
   <ItemGroup>
@@ -41,10 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Version1\" />
+    <Folder Include="Version2\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Version1\StartClient.bat" />
     <Content Include="Version1\StartServer.bat" />
+    <Content Include="Version2\StartClient.bat" />
+    <Content Include="Version2\StartServer.bat" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

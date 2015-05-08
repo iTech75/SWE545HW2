@@ -5,13 +5,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>63664f03-bed1-4bd8-8c1e-cd66258abe1c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ZeroMQTest.py</StartupFile>
+    <StartupFile>Version1\ServerV1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>ZeroMQTest</Name>
     <RootNamespace>ZeroMQTest</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +25,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Version1\ClientV1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Version1\ServerV1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ZeroMQTest.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Version1\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

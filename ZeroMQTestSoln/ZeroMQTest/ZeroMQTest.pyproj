@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>63664f03-bed1-4bd8-8c1e-cd66258abe1c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Version2\ServerV2.py</StartupFile>
+    <StartupFile>Bonus\ServerBonus.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Bonus\ClientBonus.py" />
+    <Compile Include="Bonus\ServerBonus.py" />
     <Compile Include="Client.py">
       <SubType>Code</SubType>
     </Compile>
@@ -42,10 +44,13 @@
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Bonus\" />
     <Folder Include="Version1\" />
     <Folder Include="Version2\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bonus\StartClient.bat" />
+    <Content Include="Bonus\StartServer.bat" />
     <Content Include="Version1\StartClient.bat" />
     <Content Include="Version1\StartServer.bat" />
     <Content Include="Version2\StartClient.bat" />
